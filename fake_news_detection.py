@@ -49,6 +49,6 @@ def predict_news(news_text):
     news_tfidf = vectorizer.transform([news_text])
     prediction = model.predict(news_tfidf)
     return prediction[0]
-
+#in the test_text change the sentence which I have provided in the news.csv file to check whether the news is real or fake
 test_text = "Breaking: Scientists discover a new planet similar to Earth!"
 print(f"Prediction: {predict_news(test_text)}")
